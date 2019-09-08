@@ -1,0 +1,27 @@
+mov count 0 
+mov a 1 
+.loop1: 
+ mov b a 
+mov c a 
+.loop2: 
+.loop3: 
+mul r8 b b 
+mul r7 r8 b 
+mul r6 c c 
+mul r5 r6 c 
+mov r4 0 
+add r4 r r5 
+cmp r4 a 
+beq.ci 
+sub c c 1 
+bgt.loop3 
+sub b b 0 
+bgt.loop2 
+cmp count 2 
+bgt.exit 
+add a a 1 
+.ci: 
+add   count count 1 
+.exit: 
+exit 
+mov count 0 
