@@ -1,3 +1,9 @@
+KARAN KARHALE 
+O5 (18116036)
+
+
+
+
 mov count 0 
 mov a 1 
 .loop1: 
